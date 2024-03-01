@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* hide scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+.app {
+  background-image: url("./assets/climpek.png");
+  background-color: #318cce;
+  height: 100vh;
+  width: 100vw;
+}
