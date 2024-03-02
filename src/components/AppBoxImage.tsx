@@ -15,9 +15,10 @@ interface props {
   images: string[];
   usedTechnologies: string;
   url: string;
+  type: string;
 }
 
-function AppBoxImage({ images, usedTechnologies, url }: props) {
+function AppBoxImage({ images, usedTechnologies, url, type }: props) {
   return (
     <Card
       bgColor={"#2c2c6c"}
@@ -42,7 +43,22 @@ function AppBoxImage({ images, usedTechnologies, url }: props) {
           />
           <Stack mt="6" spacing="3">
             <Heading size="md">Pharmacy Management System</Heading>
-            <Text>{usedTechnologies}</Text>
+            <Text
+              color={"#4db5ff"}
+              fontSize={"sm"}
+              fontWeight={"bold"}
+              textAlign={"center"}
+            >
+              {usedTechnologies}
+            </Text>
+            <Text
+              color={"#4db5ff"}
+              fontSize={"sm"}
+              fontWeight={"bold"}
+              textAlign={"center"}
+            >
+              {type}
+            </Text>
           </Stack>
         </VStack>
       </CardBody>

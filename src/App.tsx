@@ -1,13 +1,10 @@
 import "./App.css";
-import ExperienceListBox, { experience } from "./components/ExperienceListBox";
-import AboutMe from "./pages/AboutMe";
-import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <div className="background">
-      <AboutMe />
-      <Experience />
+      <Projects />
     </div>
   );
 }
