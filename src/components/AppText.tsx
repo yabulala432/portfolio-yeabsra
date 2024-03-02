@@ -6,9 +6,17 @@ interface props {
   fontSize?: string;
   fontWeight?: string;
   fontStyle?: string;
+  props?: any;
 }
 
-function AppText({ children, color, fontSize, fontWeight, fontStyle }: props) {
+function AppText({
+  children,
+  color,
+  fontSize,
+  fontWeight,
+  fontStyle,
+  props,
+}: props) {
   return (
     <Text
       fontStyle={fontStyle ? fontStyle : "normal"}
@@ -21,6 +29,7 @@ function AppText({ children, color, fontSize, fontWeight, fontStyle }: props) {
         color: "#FFF",
         transition: "all 1.5s ease-in-out",
       }}
+      {...props}
     >
       {children}
     </Text>
