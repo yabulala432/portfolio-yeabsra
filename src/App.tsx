@@ -1,13 +1,13 @@
 import "./App.css";
-import AppBox from "./components/AppBox";
-import { Box } from "@chakra-ui/react";
+import ExperienceListBox, { experience } from "./components/ExperienceListBox";
+import AboutMe from "./pages/AboutMe";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
-    <div className="app">
-      <Box p={10} w={400} h={400}>
-        <AppBox>App</AppBox>
-      </Box>
+    <div className="background">
+      <AboutMe />
+      <Experience />
     </div>
   );
 }

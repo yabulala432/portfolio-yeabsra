@@ -30,20 +30,28 @@ function AboutMe() {
     },
   ];
   return (
-    <VStack gap={3}>
+    <VStack
+      spacing={5}
+      align="center"
+      justify="center"
+      w={"100%"}
+      h={"100%"}
+      gap={3}
+    >
       <Heading
         textAlign={"center"}
         fontSize={"2rem"}
         fontWeight={"bold"}
         color={"#4db5ff"}
         p={5}
+        // bgColor={"red"}
       >
         About Me
       </Heading>
-      <Box m={6} borderRadius={"30px"} backgroundColor={"#2c2c6c"}>
+      <Box mt={6} borderRadius={"30px"} backgroundColor={"#2c2c6c"}>
         <Image
           borderRadius="30px"
-          boxSize="350px"
+          boxSize="250px"
           src={me}
           alt="Yeabsira Yonas"
           transform={"rotate(-30deg)"}

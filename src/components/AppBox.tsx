@@ -19,7 +19,6 @@ function AppBox({ children, props }: props) {
       alignItems={"center"}
       justifyContent={"center"}
       color={"white"}
-      // boxShadow={"0 0 1px 1px #FFF"}
       transition={"all 1s ease-in-out"}
       _hover={{
         boxShadow: "0 0 0px 1px #FFF",
