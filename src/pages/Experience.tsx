@@ -1,5 +1,3 @@
-import React from "react";
-
 import { HStack, VStack } from "@chakra-ui/react";
 
 import ExperienceListBox, { experience } from "../components/ExperienceListBox";
@@ -61,11 +59,11 @@ const backEnd: experience[] = [
 
 function Experience() {
   return (
-    <VStack spacing={10} align="center" justify="center">
+    <VStack spacing={10} p={6} align="center" justify="center">
       <AppText fontWeight="bold" fontSize="2xl" color="#4db5ff">
         My Experiences
       </AppText>
-      <HStack justify={"center"} spacing={4} wrap={"wrap"}>
+      <HStack justify={"center"} spacing={5} wrap={"wrap"}>
         <ExperienceListBox title="Front-End Dev" experiences={frontEnd} />
         <ExperienceListBox title="Back-End Dev" experiences={backEnd} />
       </HStack>
