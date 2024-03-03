@@ -7,8 +7,7 @@ function Footer() {
   return (
     <Grid
       as="footer"
-      bgColor={color.secondary}
-      // change some of its transparency of #4baef8
+      // bgColor={color.secondary}
       bgGradient="linear(to-r, #4baef8, #2c2c6c)"
       color={color.primary}
       gap={4}
