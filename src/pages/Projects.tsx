@@ -3,13 +3,32 @@ import AppBoxImage from "../components/AppBoxImage";
 import AppText from "../components/AppText";
 import color from "../config/color";
 
+// import some project images
+// e-commerce project
+import photo_1 from "../assets/e-commerceProject/photo_1.png";
+import photo_2 from "../assets/e-commerceProject/photo_2.png";
+import photo_3 from "../assets/e-commerceProject/photo_3.png";
+import photo_4 from "../assets/e-commerceProject/photo_4.png";
+import photo_5 from "../assets/e-commerceProject/photo_5.png";
+import photo_6 from "../assets/e-commerceProject/photo_6.png";
+import photo_7 from "../assets/e-commerceProject/photo_7.png";
+import photo_8 from "../assets/e-commerceProject/photo_8.png";
+
+// employee project
+import screenShot_1 from "../assets/employeeProject/screenShot1.png";
+import screenShot_2 from "../assets/employeeProject/screenShot2.png";
+import screenShot_3 from "../assets/employeeProject/screenShot3.png";
+import screenShot_4 from "../assets/employeeProject/screenShot4.png";
+import screenShot_5 from "../assets/employeeProject/screenShotFinal.png";
+
+// pharmacy project
+import screeShot from "../assets/pharmacyProject/screeShot.jpg";
+import screeShot2 from "../assets/pharmacyProject/screeShot2.jpg";
+
 const projects = [
   {
     title: "Pharmacy Management System",
-    images: [
-      "https://github.com/yabulala432/PharmacyManagementSystemNewUI/raw/main/src/main/icons/screeShot.jpg",
-      "https://github.com/yabulala432/PharmacyManagementSystemNewUI/raw/main/src/main/icons/screeShot2.jpg",
-    ],
+    images: [screeShot, screeShot2],
     type: "Desktop Application",
     usedTechnologies: "Java | Swing | MySQL ",
     url: "https://github.com/yabulala432/PharmacyManagementSystemNewUI",
@@ -17,10 +36,11 @@ const projects = [
   {
     title: "Employee Management System",
     images: [
-      "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShot2.png",
-      "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShot4.png",
-      "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShotFinal.png",
-      "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShot1.png",
+      screenShot_1,
+      screenShot_2,
+      screenShot_3,
+      screenShot_4,
+      screenShot_5,
     ],
 
     type: "Desktop Application",
@@ -30,14 +50,14 @@ const projects = [
   {
     title: "E-Commerce Application",
     images: [
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_1.png?token=GHSAT0AAAAAACOLXL5LJ7YZUZSRHWX4ASZEZPD7J4A",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_2.png?token=GHSAT0AAAAAACOLXL5L7Q334OPBR4FWH72UZPD7M6Q",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_3.png?token=GHSAT0AAAAAACOLXL5LPSNRXU5FPQ7ZEPCCZPD7N3Q",
-      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_4.png?token=GHSAT0AAAAAACOLXL5LIOHSUWGMPL33OH5WZPD2CMA",
-      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_5.png?token=GHSAT0AAAAAACOLXL5LHCWCESHAZGKAXVH2ZPD2CQQ",
-      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_6.png?token=GHSAT0AAAAAACOLXL5L2557YAVPUBGAQO4CZPD2DDA",
-      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_7.png?token=GHSAT0AAAAAACOLXL5KCMVTCHPNKZ6HXPEWZPD2DMQ",
-      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_8.png?token=GHSAT0AAAAAACOLXL5LU66EUWZ7P6QKWIQSZPD2DXQ",
+      photo_1,
+      photo_5,
+      photo_2,
+      photo_6,
+      photo_3,
+      photo_8,
+      photo_7,
+      photo_4,
     ],
     type: "Mobile Application (In Progress)",
     usedTechnologies: "React Native | Expo | NestJS | MongoDB Atlas",

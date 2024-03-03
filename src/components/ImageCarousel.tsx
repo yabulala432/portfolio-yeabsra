@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 import { Box, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface props {
-  images: string[];
+  images: any[];
   imageWidth?: string;
   imageHeight?: string;
   imageStyle?: object;
@@ -63,12 +63,12 @@ const ImageCarousel = ({
       </motion.div>
       <Box
         position="absolute"
-        top={"50%"}
+        top={"25%"}
         left="0"
         transform="translateY(-50%)"
         cursor="pointer"
         width={"20%"}
-        h={"100%"}
+        h={"50%"}
         bgColor={"rgba(0,0,0,0.01)"}
         display={"flex"}
         alignItems={"center"}
@@ -83,12 +83,12 @@ const ImageCarousel = ({
 
       <Box
         position="absolute"
-        top={"50%"}
+        top={"25%"}
         right="0"
         transform="translateY(-50%)"
         cursor="pointer"
         width={"20%"}
-        h={"100%"}
+        h={"50%"}
         bgColor={"rgba(0,0,0,0.01)"}
         display={"flex"}
         alignItems={"center"}

@@ -2,7 +2,7 @@ import "./App.css";
 import Projects from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
 import Experience from "./pages/Experience";
-import { Grid, GridItem, VStack } from "@chakra-ui/react";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <AboutMe />
       <Experience />
       <Projects />
+      <Footer />
     </div>
   );
 }
