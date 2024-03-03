@@ -41,7 +41,12 @@ function AppBoxImage({ images, usedTechnologies, url, type, title }: props) {
           <ImageCarousel
             imageHeight="200px"
             images={images}
-            imageStyle={{ borderRadius: "30px" }}
+            imageStyle={{
+              borderTopLeftRadius: "15px",
+              borderTopRightRadius: "15px",
+              borderBottomLeftRadius: "30px",
+              borderBottomRightRadius: "30px",
+            }}
             imageWidth="330px"
           />
           <Stack align={"center"} mt="6" spacing="3">
