@@ -1,13 +1,15 @@
 import { HStack, Heading, Grid, GridItem, Box } from "@chakra-ui/react";
 import color from "../config/color";
 import { FaLinkedin, FaTelegram, FaGithub, FaTwitter } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
 import AppText from "../components/AppText";
+import { PiCopyrightFill } from "react-icons/pi";
 
 function Footer() {
   return (
     <Grid
       as="footer"
-      // bgColor={color.secondary}
       bgGradient="linear(to-r, #4baef8, #2c2c6c)"
       color={color.primary}
       gap={4}
@@ -22,7 +24,12 @@ function Footer() {
         justifyContent={"center"}
         textAlign="center"
       >
-        <Heading>Yeabsira Yonas</Heading>
+        <Heading>
+          <Box style={{ color: color.primary }}>👋👋👋</Box>
+          <span style={{ color: "#FFF" }}>Y</span>
+          eabsira <span style={{ color: "#FFF" }}>Y</span>
+          onas
+        </Heading>
       </GridItem>
       <GridItem
         alignItems={"flex-end"}
@@ -38,13 +45,12 @@ function Footer() {
       </GridItem>
       <GridItem>
         <HStack justify={"center"}>
-          <FaLinkedin
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/yeabsira-yonas/")
-            }
+          <IoMdMail
             size={35}
             color={color.primary}
+            onClick={() => window.open("mailto:yabulala432@gmail.com")}
           />
+
           <FaTelegram
             onClick={() => window.open("https://t.me/fkureyohanns")}
             size={35}
@@ -60,6 +66,21 @@ function Footer() {
             size={35}
             color={color.primary}
           />
+          <FaLinkedin
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/yeabsira-yonas/")
+            }
+            size={35}
+            color={color.primary}
+          />
+        </HStack>
+      </GridItem>
+      <GridItem>
+        <HStack justify={"center"}>
+          <PiCopyrightFill color="#fff" size={20} />
+          <AppText fontSize="1rem" fontStyle="cursive" color={"#FFF"}>
+            Made with ❤️ by Yeabsira Yonas
+          </AppText>
         </HStack>
       </GridItem>
     </Grid>
