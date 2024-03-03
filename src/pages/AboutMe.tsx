@@ -1,4 +1,4 @@
-import { Box, HStack, Heading, Image, VStack } from "@chakra-ui/react";
+import { Box, Grid, GridItem, HStack, Heading, Image } from "@chakra-ui/react";
 import { BsBookmarkStarFill } from "react-icons/bs";
 import { FaGraduationCap, FaGlobe } from "react-icons/fa";
 
@@ -30,87 +30,129 @@ function AboutMe() {
     },
   ];
   return (
-    <VStack spacing={5} align="center" justify="center" gap={3} p={5}>
-      <Heading
-        textAlign={"center"}
-        fontSize={"2rem"}
-        fontWeight={"bold"}
-        color={"#4db5ff"}
-      >
-        About Me
-      </Heading>
-      <Box
-        mt={6}
-        borderRadius={"30px"}
-        backgroundColor={"#2c2c6c"}
-        transition={"all 1s ease-in-out"}
-        transform={"rotate(-30deg)"}
-        _hover={{
-          backgroundColor: "#4db5ff",
-          transform: "rotate(0deg)",
-          transition: "all 1s ease-in-out",
-        }}
-        width={"280px"}
-        height={"280px"}
+    <Grid
+      templateAreas={{
+        xl: `
+        "title title title title"
+        "photo photo boxes boxes"
+        "photo photo description description"
+        `,
+        lg: `
+        "title title title title"
+        "photo photo photo photo"
+        "boxes boxes description description"
+        `,
+
+        md: `
+        "title"
+        "photo"
+        "boxes"
+        "description"
+        `,
+        sm: `
+        "title"
+        "photo"
+        "boxes"
+        "description"
+        `,
+      }}
+      p={5}
+    >
+      <GridItem area="title">
+        <Heading
+          textAlign={"center"}
+          fontSize={"2rem"}
+          fontWeight={"bold"}
+          color={"#4db5ff"}
+        >
+          About Me
+        </Heading>
+      </GridItem>
+
+      <GridItem
+        area="photo"
         display={"flex"}
         justifyContent={"center"}
-        alignItems={"center"}
-      >
-        <Image
-          borderRadius="30px"
-          boxSize="250px"
-          src={yeabsira}
-          alt="Yeabsira Yonas"
-          transform={"rotate(0deg)"}
-          transition={"all 1s ease-in-out"}
-          _hover={{
-            transform: "scale(0.97) rotate(-30deg)",
-            transition: "all 1.5s ease-in-out",
-          }}
-        />
-      </Box>
-
-      <HStack
-        justifyContent={"center"}
-        //   bgColor={"red"}
-        wrap={"wrap"}
-        width={"100vw"}
+        overflow={"hidden"}
         p={5}
       >
-        {aboutMeData.map(({ title, icon, subtitle, footer }, index) => (
-          <Box key={index} p={1} w={240} h={190}>
-            <AppBoxIcon
-              title={title}
-              icon={icon}
-              subtitle={subtitle}
-              footer={footer}
-            />
-          </Box>
-        ))}
-      </HStack>
-      <Box textAlign={"center"} w={"60%"} p={"10px"}>
-        <AppText
-          color="#c4e1c5"
-          fontSize="1.2rem"
-          fontWeight="normal"
-          fontStyle="italic"
-          props={{
-            spacing: 3,
-            textAlign: "justify",
-            p: 10,
+        <Box
+          borderRadius={"30px"}
+          backgroundColor={"#2c2c6c"}
+          transition={"all 1s ease-in-out"}
+          transform={"rotate(-30deg)"}
+          _hover={{
+            backgroundColor: "#4db5ff",
+            transform: "rotate(0deg)",
+            transition: "all 1s ease-in-out",
           }}
+          width={"80%"}
+          height={"100%px"}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
         >
-          I'm a Software Engineering Undergradute at Addis Ababa Science and
-          Technology University. I'm an enthusiastic and driven Software
-          Engineering student seeking a challenging internship opportunity to
-          apply and expand my technical skills. With a strong academic
-          foundation in software engineering and hands-on experience in various
-          programming languages, I am eager to contribute to innovative projects
-          and learn from experienced professionals in the industry. I am a quick
-          learner who is always ready to face challenges.
-        </AppText>
-      </Box>
-    </VStack>
+          <Image
+            borderRadius="30px"
+            height={"80%"}
+            src={yeabsira}
+            alt="Yeabsira Yonas"
+            transform={"rotate(0deg)"}
+            transition={"all 1s ease-in-out"}
+            _hover={{
+              transform: "scale(0.97) rotate(-30deg)",
+              transition: "all 1.5s ease-in-out",
+            }}
+          />
+        </Box>
+      </GridItem>
+
+      <GridItem
+        area="boxes"
+        display={"flex"}
+        alignItems={"flex-end"}
+        justifyContent={"center"}
+      >
+        <HStack justifyContent={"center"} wrap={"wrap"}>
+          {aboutMeData.map(({ title, icon, subtitle, footer }, index) => (
+            <Box key={index} p={1} w={240} h={190}>
+              <AppBoxIcon
+                title={title}
+                icon={icon}
+                subtitle={subtitle}
+                footer={footer}
+              />
+            </Box>
+          ))}
+        </HStack>
+      </GridItem>
+
+      <GridItem display={"flex"} justifyContent={"center"} area="description">
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+          <AppText
+            color="#c4e1c5"
+            fontSize="1.2rem"
+            fontWeight="normal"
+            fontStyle="italic"
+            props={{
+              spacing: 3,
+              textAlign: "justify",
+              p: 4,
+            }}
+          >
+            I'm a Software Engineering Undergradute at Addis Ababa Science and
+            Technology University. I'm an enthusiastic and driven Software
+            Engineering student seeking a challenging internship opportunity to
+            apply and expand my technical skills. With a strong academic
+            foundation in software engineering and hands-on experience in
+            various programming languages, I am eager to contribute to
+            innovative projects and learn from experienced professionals in the
+            industry. I am a quick learner who is always ready to face
+            challenges.
+          </AppText>
+        </Box>
+      </GridItem>
+    </Grid>
   );
 }
 
