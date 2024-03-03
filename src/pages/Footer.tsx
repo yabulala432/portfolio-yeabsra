@@ -1,6 +1,6 @@
 import { HStack, Heading, Grid, GridItem, Box } from "@chakra-ui/react";
 import color from "../config/color";
-import { FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaGithub, FaTwitter } from "react-icons/fa";
 import AppText from "../components/AppText";
 
 function Footer() {
@@ -8,6 +8,8 @@ function Footer() {
     <Grid
       as="footer"
       bgColor={color.secondary}
+      // change some of its transparency of #4baef8
+      bgGradient="linear(to-r, #4baef8, #2c2c6c)"
       color={color.primary}
       gap={4}
       h="400px"
@@ -51,6 +53,11 @@ function Footer() {
           />
           <FaGithub
             onClick={() => window.open("https://github.com/yabulala432")}
+            size={35}
+            color={color.primary}
+          />
+          <FaTwitter
+            onClick={() => window.open("https://twitter.com/yeabsirayo77059")}
             size={35}
             color={color.primary}
           />

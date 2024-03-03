@@ -68,9 +68,14 @@ const projects = [
 function Projects() {
   return (
     <VStack spacing={10} p={6} align="center" justify="center">
-      <AppText fontWeight="bold" fontSize="2xl" color={color.secondary}>
-        My Projects
-      </AppText>
+      <VStack>
+        <AppText fontWeight="normal" fontSize="sm" color={"gray"}>
+          Some of
+        </AppText>
+        <AppText fontWeight="bold" fontSize="2xl" color={color.secondary}>
+          My Projects ...
+        </AppText>
+      </VStack>
       <HStack justify={"center"} spacing={5} wrap={"wrap"}>
         {projects.map((project, index) => (
           <AppBoxImage

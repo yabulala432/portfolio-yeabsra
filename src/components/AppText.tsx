@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 
 interface props {
-  children: string;
+  children: string | JSX.Element | React.ReactNode;
   color?: string;
   fontSize?: string;
   fontWeight?: string;
