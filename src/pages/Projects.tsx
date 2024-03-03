@@ -5,24 +5,43 @@ import ExperienceListBox from "../components/ExperienceListBox";
 
 const projects = [
   {
+    title: "Pharmacy Management System",
     images: [
       "https://github.com/yabulala432/PharmacyManagementSystemNewUI/raw/main/src/main/icons/screeShot.jpg",
       "https://github.com/yabulala432/PharmacyManagementSystemNewUI/raw/main/src/main/icons/screeShot2.jpg",
     ],
     type: "Desktop Application",
-    usedTechnologies: "React, Chakra-UI, Framer-Motion",
+    usedTechnologies: "Java | Swing | MySQL ",
     url: "https://github.com/yabulala432/PharmacyManagementSystemNewUI",
   },
   {
+    title: "Employee Management System",
     images: [
       "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShot2.png",
       "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShot4.png",
       "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShotFinal.png",
       "https://github.com/yabulala432/FullStack-Employee-Management-System/raw/main/screeshots/screenShot1.png",
     ],
+
     type: "Desktop Application",
-    usedTechnologies: "Angular, Ng-Zorro, NestJS, MongoDB",
+    usedTechnologies: "Angular | Ng-Zorro | NestJS | MongoDB",
     url: "https://github.com/yabulala432/FullStack-Employee-Management-System",
+  },
+  {
+    title: "E-Commerce Application",
+    images: [
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_1.png?token=GHSAT0AAAAAACOLXL5LCD4WCGJJ5SGU3TREZPD2AZA",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_2.png?token=GHSAT0AAAAAACOLXL5LES3DIR4NCVBRD7YAZPD2BRA",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_3.png?token=GHSAT0AAAAAACOLXL5LVV4PFMI355UVM7E2ZPD2CDA",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_4.png?token=GHSAT0AAAAAACOLXL5LIOHSUWGMPL33OH5WZPD2CMA",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_5.png?token=GHSAT0AAAAAACOLXL5LHCWCESHAZGKAXVH2ZPD2CQQ",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_6.png?token=GHSAT0AAAAAACOLXL5L2557YAVPUBGAQO4CZPD2DDA",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_7.png?token=GHSAT0AAAAAACOLXL5KCMVTCHPNKZ6HXPEWZPD2DMQ",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_8.png?token=GHSAT0AAAAAACOLXL5LU66EUWZ7P6QKWIQSZPD2DXQ",
+    ],
+    type: "Mobile Application (In Progress)",
+    usedTechnologies: "React Native | Expo | NestJS | MongoDB Atlas",
+    url: "https://github.com/yabulala432/react-native-e-commerce-app",
   },
 ];
 
@@ -40,6 +59,7 @@ function Projects() {
             usedTechnologies={project.usedTechnologies}
             url={project.url}
             type={project.type}
+            title={project.title}
           />
         ))}
       </HStack>

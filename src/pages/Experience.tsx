@@ -28,6 +28,22 @@ const frontEnd: experience[] = [
     technology: "TypeScript",
     experienceLevel: "Intermediate",
   },
+  {
+    technology: "Angular",
+    experienceLevel: "Intermediate",
+  },
+  {
+    technology: "JavaScript",
+    experienceLevel: "Intermediate",
+  },
+  {
+    technology: "Java",
+    experienceLevel: "Intermediate",
+  },
+  {
+    technology: "UI / UX Design",
+    experienceLevel: "Intermediate",
+  },
 ];
 
 const backEnd: experience[] = [

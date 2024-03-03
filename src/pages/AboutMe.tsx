@@ -5,7 +5,7 @@ import { FaGraduationCap, FaGlobe } from "react-icons/fa";
 import AppBoxIcon from "../components/AppBoxIcon";
 import AppText from "../components/AppText";
 
-import me from "../assets/me.jpg";
+import yeabsira from "../assets/yeabsira.jpg";
 
 function AboutMe() {
   const aboutMeData = [
@@ -30,34 +30,41 @@ function AboutMe() {
     },
   ];
   return (
-    <VStack
-      spacing={5}
-      align="center"
-      justify="center"
-      w={"100%"}
-      h={"100%"}
-      gap={3}
-    >
+    <VStack spacing={5} align="center" justify="center" gap={3} p={5}>
       <Heading
         textAlign={"center"}
         fontSize={"2rem"}
         fontWeight={"bold"}
         color={"#4db5ff"}
-        p={5}
-        // bgColor={"red"}
       >
         About Me
       </Heading>
-      <Box mt={6} borderRadius={"30px"} backgroundColor={"#2c2c6c"}>
+      <Box
+        mt={6}
+        borderRadius={"30px"}
+        backgroundColor={"#2c2c6c"}
+        transition={"all 1s ease-in-out"}
+        transform={"rotate(-30deg)"}
+        _hover={{
+          backgroundColor: "#4db5ff",
+          transform: "rotate(0deg)",
+          transition: "all 1s ease-in-out",
+        }}
+        width={"280px"}
+        height={"280px"}
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
         <Image
           borderRadius="30px"
           boxSize="250px"
-          src={me}
+          src={yeabsira}
           alt="Yeabsira Yonas"
-          transform={"rotate(-30deg)"}
+          transform={"rotate(0deg)"}
           transition={"all 1s ease-in-out"}
           _hover={{
-            transform: "scale(0.97) rotate(0deg)",
+            transform: "scale(0.97) rotate(-30deg)",
             transition: "all 1.5s ease-in-out",
           }}
         />
@@ -81,14 +88,7 @@ function AboutMe() {
           </Box>
         ))}
       </HStack>
-      <Box
-        textAlign={"center"}
-        // pl={15}
-        // pr={15}
-        w={"100%"}
-        h={280}
-        // bgColor={"#F0F0F0"}
-      >
+      <Box textAlign={"center"} w={"60%"} p={"10px"}>
         <AppText
           color="#c4e1c5"
           fontSize="1.2rem"

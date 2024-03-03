@@ -16,21 +16,22 @@ interface props {
   usedTechnologies: string;
   url: string;
   type: string;
+  title: string;
 }
 
-function AppBoxImage({ images, usedTechnologies, url, type }: props) {
+function AppBoxImage({ images, usedTechnologies, url, type, title }: props) {
   return (
     <Card
       bgColor={"#2c2c6c"}
-      borderRadius={2}
-      borderTopRadius={"30px"}
+      borderRadius={0}
+      border={"1px solid #2c2c6c"}
+      borderTopRadius={"35px"}
       maxW="350px"
       transition={"transform 1.5s"}
       _hover={{
-        transform: "scale(1.05)",
         transition: "transform 1.5s",
         bgColor: "transparent",
-        border: "2px solid #4aaaef",
+        border: "1px solid #49a7ec",
       }}
     >
       <CardBody>
@@ -41,22 +42,12 @@ function AppBoxImage({ images, usedTechnologies, url, type }: props) {
             images={images}
             imageStyle={{ borderRadius: "30px" }}
           />
-          <Stack mt="6" spacing="3">
-            <Heading size="md">Pharmacy Management System</Heading>
-            <Text
-              color={"#4db5ff"}
-              fontSize={"sm"}
-              fontWeight={"bold"}
-              textAlign={"center"}
-            >
+          <Stack align={"center"} mt="6" spacing="3">
+            <Heading size="md">{title}</Heading>
+            <Text color={"#4db5ff"} fontSize={"sm"} fontWeight={"bold"}>
               {usedTechnologies}
             </Text>
-            <Text
-              color={"#4db5ff"}
-              fontSize={"sm"}
-              fontWeight={"bold"}
-              textAlign={"center"}
-            >
+            <Text color={"#4db5ff"} fontSize={"sm"} fontWeight={"bold"}>
               {type}
             </Text>
           </Stack>
@@ -65,7 +56,13 @@ function AppBoxImage({ images, usedTechnologies, url, type }: props) {
       <CardFooter justify={"center"}>
         <Button
           variant="outline"
-          colorScheme="red"
+          color={"#4db5ff"}
+          borderColor={"#4db5ff"}
+          _hover={{
+            bgColor: "#4db5ff",
+            color: "#FFF",
+            borderColor: "#4db5ff",
+          }}
           onClick={() => window.open(url, "_blank")}
         >
           Github
