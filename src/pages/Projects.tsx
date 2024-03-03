@@ -1,7 +1,7 @@
 import { VStack, HStack } from "@chakra-ui/react";
 import AppBoxImage from "../components/AppBoxImage";
 import AppText from "../components/AppText";
-import ExperienceListBox from "../components/ExperienceListBox";
+import color from "../config/color";
 
 const projects = [
   {
@@ -30,14 +30,14 @@ const projects = [
   {
     title: "E-Commerce Application",
     images: [
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_1.png?token=GHSAT0AAAAAACOLXL5LCD4WCGJJ5SGU3TREZPD2AZA",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_2.png?token=GHSAT0AAAAAACOLXL5LES3DIR4NCVBRD7YAZPD2BRA",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_3.png?token=GHSAT0AAAAAACOLXL5LVV4PFMI355UVM7E2ZPD2CDA",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_4.png?token=GHSAT0AAAAAACOLXL5LIOHSUWGMPL33OH5WZPD2CMA",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_5.png?token=GHSAT0AAAAAACOLXL5LHCWCESHAZGKAXVH2ZPD2CQQ",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_6.png?token=GHSAT0AAAAAACOLXL5L2557YAVPUBGAQO4CZPD2DDA",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_7.png?token=GHSAT0AAAAAACOLXL5KCMVTCHPNKZ6HXPEWZPD2DMQ",
-      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_8.png?token=GHSAT0AAAAAACOLXL5LU66EUWZ7P6QKWIQSZPD2DXQ",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_1.png?token=GHSAT0AAAAAACOLXL5LJ7YZUZSRHWX4ASZEZPD7J4A",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_2.png?token=GHSAT0AAAAAACOLXL5L7Q334OPBR4FWH72UZPD7M6Q",
+      "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_3.png?token=GHSAT0AAAAAACOLXL5LPSNRXU5FPQ7ZEPCCZPD7N3Q",
+      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_4.png?token=GHSAT0AAAAAACOLXL5LIOHSUWGMPL33OH5WZPD2CMA",
+      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_5.png?token=GHSAT0AAAAAACOLXL5LHCWCESHAZGKAXVH2ZPD2CQQ",
+      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_6.png?token=GHSAT0AAAAAACOLXL5L2557YAVPUBGAQO4CZPD2DDA",
+      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_7.png?token=GHSAT0AAAAAACOLXL5KCMVTCHPNKZ6HXPEWZPD2DMQ",
+      // "https://raw.githubusercontent.com/yabulala432/react-native-e-commerce-app/master/app/photos/photo_8.png?token=GHSAT0AAAAAACOLXL5LU66EUWZ7P6QKWIQSZPD2DXQ",
     ],
     type: "Mobile Application (In Progress)",
     usedTechnologies: "React Native | Expo | NestJS | MongoDB Atlas",
@@ -48,7 +48,7 @@ const projects = [
 function Projects() {
   return (
     <VStack spacing={10} p={6} align="center" justify="center">
-      <AppText fontWeight="bold" fontSize="2xl" color="#4db5ff">
+      <AppText fontWeight="bold" fontSize="2xl" color={color.secondary}>
         My Projects
       </AppText>
       <HStack justify={"center"} spacing={5} wrap={"wrap"}>

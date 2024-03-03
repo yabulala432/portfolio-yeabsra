@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
+import color from "../config/color";
 
 interface props {
   children: React.ReactNode;
@@ -9,7 +10,7 @@ interface props {
 function AppBox({ children, props }: props) {
   return (
     <Box
-      bgColor={"#2c2c6c"}
+      bgColor={color.primary}
       borderRadius={"5%"}
       h={"100%"}
       w={"100%"}

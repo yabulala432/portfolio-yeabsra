@@ -49,7 +49,7 @@ const ImageCarousel = ({
         initial={direction === "prev" ? { x: "-100%" } : { x: "100%" }}
         animate={{ x: "0%" }}
         exit={direction === "prev" ? { x: "100%" } : { x: "-100%" }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1.3 }}
       >
         <Image
           src={images[currentImage]}

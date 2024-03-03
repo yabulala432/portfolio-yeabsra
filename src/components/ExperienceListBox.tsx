@@ -4,6 +4,8 @@ import { HiBadgeCheck } from "react-icons/hi";
 import AppBox from "./AppBox";
 import AppText from "./AppText";
 
+import color from "../config/color";
+
 interface props {
   title: string;
   experiences: experience[];
@@ -20,18 +22,18 @@ function ExperienceListBox({ title, experiences }: props) {
       props={{
         width: "550px",
         height: "390px",
-        bgImage: "linear-gradient(45deg, #2c2c6c, #4db5ff)",
+        bgImage: `linear-gradient(45deg, ${color.primary}, ${color.secondary})`,
         _hover: {
-          boxShadow: "0 0 0px 1px #FFF",
+          boxShadow: "0 0 0px 1px white",
           transition: "all 1.5s ease-in-out",
-          bgImage: "linear-gradient(45deg, #4db5ff, #2c2c6c)",
+          bgImage: `linear-gradient(45deg, ${color.secondary}, ${color.primary})`,
           border: "1px solid #FFF",
           transform: "scale(1.1)",
         },
       }}
     >
       <VStack spacing={7} align="center" justify="center" h="100%" w="100%">
-        <AppText fontWeight="bold" fontSize="2xl" color="#fff">
+        <AppText fontWeight="bold" fontSize="2xl">
           {title}
         </AppText>
         <Grid
@@ -48,7 +50,7 @@ function ExperienceListBox({ title, experiences }: props) {
           {experiences.map(({ technology, experienceLevel }, index) => (
             <GridItem w="100%" h="10" key={index}>
               <HStack gap={4}>
-                <HiBadgeCheck color="#4db5ff" size={25} />
+                <HiBadgeCheck color={"#FFF"} size={25} />
                 <VStack alignItems={"flex-start"} gap={0} columnGap={0}>
                   <AppText fontWeight="bold" fontSize="md">
                     {technology}

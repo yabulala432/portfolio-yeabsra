@@ -2,6 +2,7 @@ import { HStack, VStack } from "@chakra-ui/react";
 
 import ExperienceListBox, { experience } from "../components/ExperienceListBox";
 import AppText from "../components/AppText";
+import color from "../config/color";
 
 const frontEnd: experience[] = [
   {
@@ -76,7 +77,7 @@ const backEnd: experience[] = [
 function Experience() {
   return (
     <VStack spacing={10} p={6} align="center" justify="center">
-      <AppText fontWeight="bold" fontSize="2xl" color="#4db5ff">
+      <AppText fontWeight="bold" fontSize="2xl" color={color.secondary}>
         My Experiences
       </AppText>
       <HStack justify={"center"} spacing={5} wrap={"wrap"}>

@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 import ImageCarousel from "./ImageCarousel";
+import color from "../config/color";
 
 interface props {
   images: string[];
@@ -22,32 +23,33 @@ interface props {
 function AppBoxImage({ images, usedTechnologies, url, type, title }: props) {
   return (
     <Card
-      bgColor={"#2c2c6c"}
+      bgColor={color.primary}
+      border={`1px solid ${color.primary}`}
       borderRadius={0}
-      border={"1px solid #2c2c6c"}
       borderTopRadius={"35px"}
       maxW="350px"
+      overflow={"hidden"}
       transition={"transform 1.5s"}
       _hover={{
         transition: "transform 1.5s",
         bgColor: "transparent",
-        border: "1px solid #49a7ec",
+        border: `1px solid #FFF`,
       }}
     >
       <CardBody>
         <VStack>
           <ImageCarousel
-            imageWidth="330px"
             imageHeight="200px"
             images={images}
             imageStyle={{ borderRadius: "30px" }}
+            imageWidth="330px"
           />
           <Stack align={"center"} mt="6" spacing="3">
             <Heading size="md">{title}</Heading>
-            <Text color={"#4db5ff"} fontSize={"sm"} fontWeight={"bold"}>
+            <Text color={color.textColor} fontSize={"sm"} fontWeight={"bold"}>
               {usedTechnologies}
             </Text>
-            <Text color={"#4db5ff"} fontSize={"sm"} fontWeight={"bold"}>
+            <Text color={color.textColor} fontSize={"sm"} fontWeight={"bold"}>
               {type}
             </Text>
           </Stack>
@@ -55,15 +57,15 @@ function AppBoxImage({ images, usedTechnologies, url, type, title }: props) {
       </CardBody>
       <CardFooter justify={"center"}>
         <Button
+          borderColor={color.textColor}
+          color={color.textColor}
           variant="outline"
-          color={"#4db5ff"}
-          borderColor={"#4db5ff"}
-          _hover={{
-            bgColor: "#4db5ff",
-            color: "#FFF",
-            borderColor: "#4db5ff",
-          }}
           onClick={() => window.open(url, "_blank")}
+          _hover={{
+            bgColor: color.textColor,
+            color: "white",
+            borderColor: color.textColor,
+          }}
         >
           Github
         </Button>

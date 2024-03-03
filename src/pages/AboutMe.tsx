@@ -5,6 +5,8 @@ import { FaGraduationCap, FaGlobe } from "react-icons/fa";
 import AppBoxIcon from "../components/AppBoxIcon";
 import AppText from "../components/AppText";
 
+import color from "../config/color";
+
 import yeabsira from "../assets/yeabsira.jpg";
 
 function AboutMe() {
@@ -63,7 +65,7 @@ function AboutMe() {
           textAlign={"center"}
           fontSize={"2rem"}
           fontWeight={"bold"}
-          color={"#4db5ff"}
+          color={color.secondary}
         >
           About Me
         </Heading>
@@ -78,11 +80,11 @@ function AboutMe() {
       >
         <Box
           borderRadius={"30px"}
-          backgroundColor={"#2c2c6c"}
+          backgroundColor={color.primary}
           transition={"all 1s ease-in-out"}
           transform={"rotate(-30deg)"}
           _hover={{
-            backgroundColor: "#4db5ff",
+            backgroundColor: color.secondary,
             transform: "rotate(0deg)",
             transition: "all 1s ease-in-out",
           }}
@@ -130,7 +132,7 @@ function AboutMe() {
       <GridItem display={"flex"} justifyContent={"center"} area="description">
         <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
           <AppText
-            color="#c4e1c5"
+            color={color.textColor}
             fontSize="1.2rem"
             fontWeight="normal"
             fontStyle="italic"
