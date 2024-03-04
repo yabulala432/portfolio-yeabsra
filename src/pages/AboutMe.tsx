@@ -125,7 +125,12 @@ function AboutMe() {
       </GridItem>
 
       <GridItem display={"flex"} justifyContent={"center"} area="description">
-        <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <Box
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          p={10}
+        >
           <AppText
             color={color.textColor}
             fontSize="1.2rem"
@@ -134,7 +139,7 @@ function AboutMe() {
             props={{
               spacing: 3,
               textAlign: "justify",
-              p: 4,
+              // p: 4,
             }}
           >
             I'm a Software Engineering Undergradute at Addis Ababa Science and
