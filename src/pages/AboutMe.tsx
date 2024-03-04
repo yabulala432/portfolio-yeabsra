@@ -88,7 +88,7 @@ function AboutMe() {
             transform: "rotate(0deg)",
             transition: "all 1s ease-in-out",
           }}
-          width={"80%"}
+          width={"75%"}
           height={"100%px"}
           display={"flex"}
           justifyContent={"center"}
