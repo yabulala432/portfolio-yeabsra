@@ -55,7 +55,7 @@ const projects = [
       screenShot_5,
     ],
 
-    type: "Desktop Application",
+    type: "Web Application",
     usedTechnologies: "Angular | Ng-Zorro | NestJS | MongoDB",
     url: "https://github.com/yabulala432/FullStack-Employee-Management-System",
   },
@@ -78,7 +78,7 @@ const projects = [
   {
     title: "Game-Hub",
     images: [gameHub_1],
-    type: "Web",
+    type: "Web Application",
     usedTechnologies: "React | Vite | Chackra-UI | TS",
     url: "https://github.com/yabulala432/game-hub",
   },
