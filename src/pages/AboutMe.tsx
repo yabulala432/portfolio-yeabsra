@@ -45,13 +45,7 @@ function AboutMe() {
         "boxes boxes description description"
         `,
 
-        md: `
-        "title"
-        "photo"
-        "boxes"
-        "description"
-        `,
-        sm: `
+        base: `
         "title"
         "photo"
         "boxes"
@@ -59,11 +53,12 @@ function AboutMe() {
         `,
       }}
       p={5}
+      gap={5}
     >
       <GridItem area="title">
         <Heading
           textAlign={"center"}
-          fontSize={"2rem"}
+          fontSize={"2xl"}
           fontWeight={"bold"}
           color={color.secondary}
         >
