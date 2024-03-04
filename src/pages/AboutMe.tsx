@@ -1,4 +1,12 @@
-import { Box, Grid, GridItem, HStack, Heading, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  HStack,
+  Heading,
+  Image,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { BsBookmarkStarFill } from "react-icons/bs";
 import { FaGraduationCap, FaGlobe } from "react-icons/fa";
 
@@ -31,6 +39,7 @@ function AboutMe() {
       footer: "",
     },
   ];
+  const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
   return (
     <Grid
       templateAreas={{
@@ -77,21 +86,27 @@ function AboutMe() {
           borderRadius={"30px"}
           backgroundColor={color.primary}
           transition={"all 1s ease-in-out"}
-          transform={"rotate(-30deg)"}
+          transform={isLargerThan1280 ? "rotate(0deg)" : "rotate(30deg)"}
           _hover={{
-            backgroundColor: color.secondary,
-            transform: "rotate(0deg)",
+            backgroundColor: isLargerThan1280 ? "none" : color.secondary,
+            transform: isLargerThan1280 ? "" : "rotate(0deg)",
             transition: "all 1s ease-in-out",
           }}
-          width={"75%"}
+          // if above 1280px
+          width={isLargerThan1280 ? "100%" : "75%"}
+          maxH={isLargerThan1280 ? "650px" : "600px"}
+          maxW={isLargerThan1280 ? "650px" : "600px"}
+          // maxW={"650px"}
           height={"100%px"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
+          background={isLargerThan1280 ? "none" : color.primary}
         >
           <Image
             borderRadius="30px"
             height={"80%"}
+            maxH={"650px"}
             src={yeabsira}
             alt="Yeabsira Yonas"
             transform={"rotate(0deg)"}
