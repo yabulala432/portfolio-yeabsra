@@ -24,11 +24,23 @@ import screenShot_5 from "../assets/employeeProject/screenShotFinal.png";
 // pharmacy project
 import screeShot from "../assets/pharmacyProject/screeShot.jpg";
 import screeShot2 from "../assets/pharmacyProject/screeShot2.jpg";
+import screeShot3 from "../assets/pharmacyProject/screeShot3.png";
+
+// game-hub project
+import gameHub_1 from "../assets/game-hubProject/game_hub1.jpg";
+
+// snake game and capital cities game
+import snake1 from "../assets/snake-gameProject/snake1.png";
+import snake2 from "../assets/snake-gameProject/snake2.png";
+import snake3 from "../assets/snake-gameProject/snake3.png";
+import snake4 from "../assets/snake-gameProject/snake4.png";
+import snake5 from "../assets/snake-gameProject/snake5.png";
+import snake6 from "../assets/snake-gameProject/snake6.png";
 
 const projects = [
   {
     title: "Pharmacy Management System",
-    images: [screeShot, screeShot2],
+    images: [screeShot, screeShot2, screeShot3],
     type: "Desktop Application",
     usedTechnologies: "Java | Swing | MySQL ",
     url: "https://github.com/yabulala432/PharmacyManagementSystemNewUI",
@@ -60,8 +72,22 @@ const projects = [
       photo_4,
     ],
     type: "Mobile Application (In Progress)",
-    usedTechnologies: "React Native | Expo | NestJS | MongoDB Atlas",
+    usedTechnologies: "React Native | Expo | NestJS | MongoDB Atlas | TS",
     url: "https://github.com/yabulala432/react-native-e-commerce-app",
+  },
+  {
+    title: "Game-Hub",
+    images: [gameHub_1],
+    type: "Web",
+    usedTechnologies: "React | Vite | Chackra-UI | TS",
+    url: "https://github.com/yabulala432/game-hub",
+  },
+  {
+    title: "Snake Game and Capital-Cities Quiz",
+    images: [snake1, snake2, snake3, snake4, snake5, snake6],
+    type: "Desktop Application",
+    usedTechnologies: "Java | JavaFX",
+    url: "https://github.com/yabulala432/Snake-Game-And-Capital-City-Quiz",
   },
 ];
 
