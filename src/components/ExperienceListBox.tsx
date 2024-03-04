@@ -20,7 +20,8 @@ function ExperienceListBox({ title, experiences }: props) {
   return (
     <AppBox
       props={{
-        width: "550px",
+        maxWidth: "550px",
+        minWidth: "300px",
         height: "390px",
         bgImage: `linear-gradient(45deg, ${color.primary}, ${color.secondary})`,
         _hover: {
