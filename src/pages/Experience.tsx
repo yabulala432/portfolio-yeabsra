@@ -80,7 +80,7 @@ function Experience() {
       <AppText fontWeight="bold" fontSize="2xl" color={color.secondary}>
         My Experiences
       </AppText>
-      <HStack justify={"center"} spacing={5} wrap={"wrap"}>
+      <HStack justify={"center"} w={"100%"} spacing={3} wrap={"wrap"}>
         <ExperienceListBox title="Front-End Dev" experiences={frontEnd} />
         <ExperienceListBox title="Back-End Dev" experiences={backEnd} />
       </HStack>
