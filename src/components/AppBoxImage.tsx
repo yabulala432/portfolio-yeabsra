@@ -50,7 +50,9 @@ function AppBoxImage({ images, usedTechnologies, url, type, title }: props) {
             imageWidth="330px"
           />
           <Stack align={"center"} mt="6" spacing="3">
-            <Heading size="md">{title}</Heading>
+            <Heading color={"#FFF"} size="md">
+              {title}
+            </Heading>
             <Text color={color.textColor} fontSize={"sm"} fontWeight={"bold"}>
               {usedTechnologies}
             </Text>
