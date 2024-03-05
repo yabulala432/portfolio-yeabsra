@@ -72,7 +72,7 @@ const projects = [
       photo_4,
     ],
     type: "Mobile Application (In Progress)",
-    usedTechnologies: "React Native | Expo | NestJS | MongoDB Atlas | TS",
+    usedTechnologies: "React Native | Expo | NestJS | MongoDB | TS",
     url: "https://github.com/yabulala432/react-native-e-commerce-app",
   },
   {
